@@ -5,13 +5,11 @@ VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JewelThief", "JewelThief\JewelThief.csproj", "{81A8F459-FA7E-4749-9D73-71854E5B866A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JewelThief.Services.Tests", "JewelThiefTests\JewelThief.Services.Tests.csproj", "{B7874E70-9AE9-4BA2-AF32-8A795055D387}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JewelThief.Services", "JewelThief.Services\JewelThief.Services.csproj", "{AEF5147A-8945-4897-9284-1B18A34B5962}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JewelThief.Services", "JewelThief.Services\JewelThief.Services.csproj", "{AEF5147A-8945-4897-9284-1B18A34B5962}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JewelThief.Core", "JewelThief.Core\JewelThief.Core.csproj", "{A2A8C0D4-FF1A-48C4-A6A7-1E1E3615BD74}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JewelThief.Core", "JewelThief.Core\JewelThief.Core.csproj", "{A2A8C0D4-FF1A-48C4-A6A7-1E1E3615BD74}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JewelThief.Core.Tests", "JewelThief.Core.Tests\JewelThief.Core.Tests.csproj", "{CD210666-C43D-444E-8F0C-19909DA2E875}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JewelThief.Core.Tests", "JewelThief.Core.Tests\JewelThief.Core.Tests.csproj", "{CD210666-C43D-444E-8F0C-19909DA2E875}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{8A157EB0-8759-43BB-AB25-8FDB46C01E75}"
 EndProject
@@ -20,6 +18,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.gitignore = .gitignore
 		README.md = README.md
 	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JewelThief.Services.Tests", "JewelThief.Services.Tests\JewelThief.Services.Tests.csproj", "{FE650D05-B036-4F37-84D7-AF3F63F3523C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,18 +43,6 @@ Global
 		{81A8F459-FA7E-4749-9D73-71854E5B866A}.Release|x64.Build.0 = Release|Any CPU
 		{81A8F459-FA7E-4749-9D73-71854E5B866A}.Release|x86.ActiveCfg = Release|Any CPU
 		{81A8F459-FA7E-4749-9D73-71854E5B866A}.Release|x86.Build.0 = Release|Any CPU
-		{B7874E70-9AE9-4BA2-AF32-8A795055D387}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B7874E70-9AE9-4BA2-AF32-8A795055D387}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B7874E70-9AE9-4BA2-AF32-8A795055D387}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{B7874E70-9AE9-4BA2-AF32-8A795055D387}.Debug|x64.Build.0 = Debug|Any CPU
-		{B7874E70-9AE9-4BA2-AF32-8A795055D387}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{B7874E70-9AE9-4BA2-AF32-8A795055D387}.Debug|x86.Build.0 = Debug|Any CPU
-		{B7874E70-9AE9-4BA2-AF32-8A795055D387}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B7874E70-9AE9-4BA2-AF32-8A795055D387}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B7874E70-9AE9-4BA2-AF32-8A795055D387}.Release|x64.ActiveCfg = Release|Any CPU
-		{B7874E70-9AE9-4BA2-AF32-8A795055D387}.Release|x64.Build.0 = Release|Any CPU
-		{B7874E70-9AE9-4BA2-AF32-8A795055D387}.Release|x86.ActiveCfg = Release|Any CPU
-		{B7874E70-9AE9-4BA2-AF32-8A795055D387}.Release|x86.Build.0 = Release|Any CPU
 		{AEF5147A-8945-4897-9284-1B18A34B5962}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AEF5147A-8945-4897-9284-1B18A34B5962}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AEF5147A-8945-4897-9284-1B18A34B5962}.Debug|x64.ActiveCfg = Debug|Any CPU
@@ -91,13 +79,25 @@ Global
 		{CD210666-C43D-444E-8F0C-19909DA2E875}.Release|x64.Build.0 = Release|Any CPU
 		{CD210666-C43D-444E-8F0C-19909DA2E875}.Release|x86.ActiveCfg = Release|Any CPU
 		{CD210666-C43D-444E-8F0C-19909DA2E875}.Release|x86.Build.0 = Release|Any CPU
+		{FE650D05-B036-4F37-84D7-AF3F63F3523C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE650D05-B036-4F37-84D7-AF3F63F3523C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE650D05-B036-4F37-84D7-AF3F63F3523C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{FE650D05-B036-4F37-84D7-AF3F63F3523C}.Debug|x64.Build.0 = Debug|Any CPU
+		{FE650D05-B036-4F37-84D7-AF3F63F3523C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FE650D05-B036-4F37-84D7-AF3F63F3523C}.Debug|x86.Build.0 = Debug|Any CPU
+		{FE650D05-B036-4F37-84D7-AF3F63F3523C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE650D05-B036-4F37-84D7-AF3F63F3523C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE650D05-B036-4F37-84D7-AF3F63F3523C}.Release|x64.ActiveCfg = Release|Any CPU
+		{FE650D05-B036-4F37-84D7-AF3F63F3523C}.Release|x64.Build.0 = Release|Any CPU
+		{FE650D05-B036-4F37-84D7-AF3F63F3523C}.Release|x86.ActiveCfg = Release|Any CPU
+		{FE650D05-B036-4F37-84D7-AF3F63F3523C}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{B7874E70-9AE9-4BA2-AF32-8A795055D387} = {8A157EB0-8759-43BB-AB25-8FDB46C01E75}
 		{CD210666-C43D-444E-8F0C-19909DA2E875} = {8A157EB0-8759-43BB-AB25-8FDB46C01E75}
+		{FE650D05-B036-4F37-84D7-AF3F63F3523C} = {8A157EB0-8759-43BB-AB25-8FDB46C01E75}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F13BBBAE-F626-463C-8652-94286D0016A1}
